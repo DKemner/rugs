@@ -4,22 +4,231 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daron's Tapijten</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header / Banner */
+    header {
+      background: #2c2c2c;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    /* Navigation */
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .rug-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .rug-card {
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .rug-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .rug-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .rug-card .rug-info {
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    .rug-card .rug-info h3 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c2c2c;
+      color: #ccc;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Daron's Tapijten</h1>
-    <p>Kopen • Huren • Leasen</p>
+    <p>Thuis is waar het tapijt ligt</p>
+    <p>Gegarandeerd handgeknoopt</p>
   </header>
 
-  <main>  <!-- maak nieuwe a's voor elke tapijt --> 
-    <a href="/projects/project1.html">
-      <img src="/images/project1.png" alt="Project 1" />
-    </a>
+  <nav>
+    <a href="#rent">Huren</a>
+    <a href="#buy">Kopen</a>
+    <a href="#lease">Leasen</a>
+  </nav>
+
+  <main>
+    <section class="rug-grid">
+      <a class="rug-card" href="rug1.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 1" />
+        <div class="rug-info">
+          <h3>Persian Classic</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug2.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 2" />
+        <div class="rug-info">
+          <h3>Modern Geometric</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug3.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 3" />
+        <div class="rug-info">
+          <h3>Vintage Wool</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug4.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 4" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug5.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 5" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug6.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 6" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug7.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 7" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug8.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 8" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug9.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 9" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug10.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 10" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+
+      <a class="rug-card" href="rug11.html">
+        <img src="https://via.placeholder.com/400x300" alt="Rug 11" />
+        <div class="rug-info">
+          <h3>Minimal Neutral</h3>
+        </div>
+      </a>
+      
+    </section>
   </main>
 
   <footer>
-    <p>© 2026 Daron Kemner</p>
+    <div class="footer-content">
+      <p>© 2026 Daron's Tapijten. All rights reserved.</p>
+      <p>Handgeknoopte tapijten voor huis en bedrijf.</p>
+    </div>
   </footer>
+
 </body>
 </html>
