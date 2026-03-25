@@ -59,3 +59,53 @@ footer {
   padding: 2rem;
   color: #666;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card container */
+.card {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+/* Title */
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Hover effect */
+.grid-item:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Remove link underline */
+.grid-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 📱 Phone view */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
