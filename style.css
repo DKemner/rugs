@@ -185,3 +185,27 @@ footer {
     margin-top: 10px;
   }
 }
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Click effect */
+.btn:active {
+  transform: scale(0.97);
+}
