@@ -18,6 +18,10 @@ header {
   text-align: left;
 }
 
+.line {
+  display: flex;
+  justify-content: space-between;
+}
 
 main {
   max-width: 800px;
