@@ -22,6 +22,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 h1 a {
@@ -32,6 +33,10 @@ h1 a {
 h1 a:hover {
   opacity: 0.8;
   text-decoration: none;
+}
+
+.h1-small {
+  font-size: 2rem; /* smaller version */
 }
 
 form {
