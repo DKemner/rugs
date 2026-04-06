@@ -24,6 +24,14 @@ h1 {
   text-align: center;
 }
 
+h1 a {
+  text-decoration: none;
+}
+
+h1 a:hover {
+  opacity: 0.8;
+}
+
 form {
   display: flex;
   flex-direction: column;
