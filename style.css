@@ -169,7 +169,7 @@ footer {
 /* 📱 Phone view */
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 .layout {
