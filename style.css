@@ -24,9 +24,9 @@
 
 @media (max-width: 768px) {
   .container {
-    margin: 20px 12px;     /* less space on small screens */
-    padding: 18px;         /* slightly tighter */
-    border-radius: 8px;    /* optional: softer look */
+    margin: 12px 8px;     /* less space on small screens */
+    padding: 6px;         /* slightly tighter */
+    border-radius: 6px;    /* optional: softer look */
   }
 }
 
