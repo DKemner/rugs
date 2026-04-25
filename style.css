@@ -13,6 +13,8 @@
 
 .page-with-sticky-footer main {
   flex: 1;
+  display: flex;              /* 👈 important if you want centered content */
+  flex-direction: column;
 }
 
 body {
@@ -90,13 +92,14 @@ header {
 .line {
   display: flex;
   justify-content: space-between;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.5rem, 1vw, 1rem);
 }
 
 main {
   max-width: 1400px;
   margin: 2rem auto;
   padding: 0 1rem;
+  background: red;
 }
 
 section {
