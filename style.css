@@ -129,6 +129,24 @@ header {
   font-size: clamp(0.5rem, 1vw, 1rem);
 }
 
+.line-page-with-sticky-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(0.5rem, 1vw, 1rem);
+}
+
+@media (max-width: 768px) {
+  .h1-page-with-sticky-footer {
+    font-size: 36x;
+  }
+}
+
+@media (max-width: 768px) {
+  .line-page-with-sticky-footer {
+    font-size: 12x;
+  }
+}
+
 main {
   max-width: 1400px;
   margin: 2rem auto;
